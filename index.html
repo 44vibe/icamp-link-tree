@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>i.camp — Links</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICAMP</title>
+  <link rel="icon" type="image/png" href="./favicon.png">
+  <link rel="apple-touch-icon" href="./favicon-18x24.png">
+  <meta name="description" content="Personalised AI Coding Bootcamps for Computer Science. An adaptive learning environment for serious CS builders." />
+  <meta name="robots" content="index,follow">
+  <meta name="keywords" content="coding,bootcamp,computer science, i.camp,icamp,advanced coding bootcamp, system design, rpa, javascript, 0x.house" />
+
+  <meta property="og:title" content="ICAMP | Personalised AI Coding Bootcamps for Computer Science." />
+  <meta property="og:description" content="Personalised AI Coding Bootcamps for Computer Science. An adaptive learning environment for serious CS builders." />
+  <meta property="og:image" content="https://i.camp/meta.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://i.camp" />
+  <link rel="canonical" href="https://i.camp">
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +38,7 @@
           },
           fontFamily: {
             mono:    ['"IBM Plex Mono"', 'monospace'],
-            display: ['"Outfit"', 'sans-serif'],
+            display: ['arial', 'sans-serif'],
           },
         },
       },
@@ -33,7 +46,7 @@
   </script>
 
   <style>
-    /* ── Custom font ────────────────────────────────── */
+    /* ── Custom fonts ───────────────────────────────── */
     @font-face {
       font-family: 'Radiospace';
       src: url('fonts/radiospacebold.ttf') format('truetype');
@@ -41,6 +54,7 @@
       font-style: normal;
       font-display: swap;
     }
+
 
     /* ── Things Tailwind can't do ───────────────────── */
 
@@ -119,7 +133,7 @@
   </style>
 </head>
 
-<body class="bg-surface font-display text-white min-h-screen flex flex-col items-center justify-start py-8 sm:py-12 px-5 relative overflow-x-hidden">
+<body class="bg-surface font-display text-white h-screen flex flex-col items-center justify-start py-8 sm:py-12 px-5 relative overflow-hidden">
   <canvas id="bg-canvas"></canvas>
   <div class="relative z-10 w-full max-w-[400px] flex flex-col pb-28">
 
@@ -128,7 +142,7 @@
       <div class="text-[3.5rem] sm:text-[5rem] leading-none" style="font-family: 'Radiospace', monospace;">
         i.camp
       </div>
-      <p class="font-mono text-[0.85rem] text-text-sec mt-2.5 tracking-[0.01em] leading-relaxed flex items-center justify-center gap-[3px]">
+      <p class="font-mono text-[0.70rem] text-text-sec mt-2.r tracking-[0.01em] leading-relaxed flex items-center justify-center gap-[3px]">
         Building Future Computer Science Engineers.<span class="logo-cursor" aria-hidden="true"></span>
       </p>
     </div>
@@ -139,11 +153,11 @@
     <!-- ── Link Cards ── -->
     <div class="flex flex-col gap-2.5">
 
-      <a href="#" class="link-card group flex items-center justify-between px-[1.125rem] py-[1.0625rem] bg-on-surface border border-brand-border rounded-[10px] no-underline relative overflow-hidden transition-all duration-200 hover:border-accent/30 hover:bg-on-on-surface a3" target="_blank" rel="noopener">
+      <a href="https://i.camp" class="link-card group flex items-center justify-between px-[1.125rem] py-[1.0625rem] bg-on-surface border border-brand-border rounded-[10px] no-underline relative overflow-hidden transition-all duration-200 hover:border-accent/30 hover:bg-on-on-surface a3" target="_blank" rel="noopener">
         <div class="flex items-center gap-3.5">
           <span class="font-mono text-[0.75rem] font-medium text-accent opacity-55 min-w-[1.4rem] leading-none transition-opacity duration-200 group-hover:opacity-100">01</span>
           <div class="flex flex-col gap-[0.15rem]">
-            <span class="text-[1rem] font-medium text-white tracking-[0.01em] leading-none transition-colors duration-200 group-hover:text-accent">i.camp</span>
+            <span class="text-[1rem] font-medium text-white tracking-[0.01em] leading-none transition-colors duration-200 group-hover:text-accent">ICAMP</span>
             <span class="font-mono text-[0.8rem] text-text-sec leading-none">Main Website</span>
           </div>
         </div>
@@ -152,12 +166,12 @@
         </svg>
       </a>
 
-      <a href="#" class="link-card group flex items-center justify-between px-[1.125rem] py-[1.0625rem] bg-on-surface border border-brand-border rounded-[10px] no-underline relative overflow-hidden transition-all duration-200 hover:border-accent/30 hover:bg-on-on-surface a4" target="_blank" rel="noopener">
+      <a href="https://terminal.i.camp" class="link-card group flex items-center justify-between px-[1.125rem] py-[1.0625rem] bg-on-surface border border-brand-border rounded-[10px] no-underline relative overflow-hidden transition-all duration-200 hover:border-accent/30 hover:bg-on-on-surface a4" target="_blank" rel="noopener">
         <div class="flex items-center gap-3.5">
           <span class="font-mono text-[0.75rem] font-medium text-accent opacity-55 min-w-[1.4rem] leading-none transition-opacity duration-200 group-hover:opacity-100">02</span>
           <div class="flex flex-col gap-[0.15rem]">
             <span class="text-[1rem] font-medium text-white tracking-[0.01em] leading-none transition-colors duration-200 group-hover:text-accent">Terminal</span>
-            <span class="font-mono text-[0.8rem] text-text-sec leading-none">Coding Bootcamp</span>
+            <span class="font-mono text-[0.8rem] text-text-sec leading-none">Adaptive Learning Research Group</span>
           </div>
         </div>
         <svg class="shrink-0 text-text-sec transition-all duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -165,7 +179,7 @@
         </svg>
       </a>
 
-      <a href="#" class="link-card group flex items-center justify-between px-[1.125rem] py-[1.0625rem] bg-on-surface border border-brand-border rounded-[10px] no-underline relative overflow-hidden transition-all duration-200 hover:border-accent/30 hover:bg-on-on-surface a5" target="_blank" rel="noopener">
+      <a href="https://bytes.i.camp" class="link-card group flex items-center justify-between px-[1.125rem] py-[1.0625rem] bg-on-surface border border-brand-border rounded-[10px] no-underline relative overflow-hidden transition-all duration-200 hover:border-accent/30 hover:bg-on-on-surface a5" target="_blank" rel="noopener">
         <div class="flex items-center gap-3.5">
           <span class="font-mono text-[0.75rem] font-medium text-accent opacity-55 min-w-[1.4rem] leading-none transition-opacity duration-200 group-hover:opacity-100">03</span>
           <div class="flex flex-col gap-[0.15rem]">
@@ -178,12 +192,12 @@
         </svg>
       </a>
 
-      <a href="#" class="link-card group flex items-center justify-between px-[1.125rem] py-[1.0625rem] bg-on-surface border border-brand-border rounded-[10px] no-underline relative overflow-hidden transition-all duration-200 hover:border-accent/30 hover:bg-on-on-surface a6" target="_blank" rel="noopener">
+      <a href="https://tauprofile.com" class="link-card group flex items-center justify-between px-[1.125rem] py-[1.0625rem] bg-on-surface border border-brand-border rounded-[10px] no-underline relative overflow-hidden transition-all duration-200 hover:border-accent/30 hover:bg-on-on-surface a6" target="_blank" rel="noopener">
         <div class="flex items-center gap-3.5">
           <span class="font-mono text-[0.75rem] font-medium text-accent opacity-55 min-w-[1.4rem] leading-none transition-opacity duration-200 group-hover:opacity-100">04</span>
           <div class="flex flex-col gap-[0.15rem]">
             <span class="text-[1rem] font-medium text-white tracking-[0.01em] leading-none transition-colors duration-200 group-hover:text-accent">Tau Profile</span>
-            <span class="font-mono text-[0.8rem] text-text-sec leading-none">Skill Identity Layer</span>
+            <span class="font-mono text-[0.8rem] text-text-sec leading-none">CS Engineer Profile</span>
           </div>
         </div>
         <svg class="shrink-0 text-text-sec transition-all duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -201,35 +215,32 @@
 
     <div class="flex items-center justify-center flex-wrap gap-[1.125rem] pointer-events-auto">
       <a href="https://x.com/icamp" class="text-text-sec transition-all duration-[180ms] hover:text-accent hover:-translate-y-0.5 flex items-center" aria-label="X" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
       </a>
       <a href="https://github.com/icampai" class="text-text-sec transition-all duration-[180ms] hover:text-accent hover:-translate-y-0.5 flex items-center" aria-label="GitHub" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
       </a>
       <a href="https://www.instagram.com/icamp.ai/" class="text-text-sec transition-all duration-[180ms] hover:text-accent hover:-translate-y-0.5 flex items-center" aria-label="Instagram" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
       </a>
       <a href="https://www.linkedin.com/company/icampai/" class="text-text-sec transition-all duration-[180ms] hover:text-accent hover:-translate-y-0.5 flex items-center" aria-label="LinkedIn" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
       </a>
       <a href="https://www.reddit.com/r/icampai/" class="text-text-sec transition-all duration-[180ms] hover:text-accent hover:-translate-y-0.5 flex items-center" aria-label="Reddit" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
-      </a>
-      <a href="https://farcaster.xyz/icamp" class="text-text-sec transition-all duration-[180ms] hover:text-accent hover:-translate-y-0.5 flex items-center" aria-label="Farcaster" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.19 2H12.81C17.86 2 22 6.14 22 11.19V12.81C22 17.86 17.86 22 12.81 22H11.19C6.14 22 2 17.86 2 12.81V11.19C2 6.14 6.14 2 11.19 2ZM7.5 7.5V16.5H9V12.75H15V16.5H16.5V7.5H15V11.25H9V7.5H7.5Z"/></svg>
-      </a>
-      <a href="mailto:we@i.camp" class="text-text-sec transition-all duration-[180ms] hover:text-accent hover:-translate-y-0.5 flex items-center" aria-label="Email" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-      </a>
-      <a href="https://www.facebook.com/icampai" class="text-text-sec transition-all duration-[180ms] hover:text-accent hover:-translate-y-0.5 flex items-center" aria-label="Facebook" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/></svg>
       </a>
       <a href="https://medium.com/@icamp.ai" class="text-text-sec transition-all duration-[180ms] hover:text-accent hover:-translate-y-0.5 flex items-center" aria-label="Medium" target="_blank" rel="noopener">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+      </a>
+      <a href="mailto:we@i.camp" class="text-text-sec transition-all duration-[180ms] hover:text-accent hover:-translate-y-0.5 flex items-center" aria-label="Email" target="_blank" rel="noopener">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+      <a href="https://farcaster.xyz/icamp" class="text-text-sec transition-all duration-[180ms] hover:text-accent hover:-translate-y-0.5 flex items-center" aria-label="Farcaster" target="_blank" rel="noopener">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4.11841 1H19.5982V4.09052H24L23.0775 7.18179H22.2964V19.6873C22.6881 19.6873 23.0061 20.0012 23.0061 20.3892V21.2321H23.1481C23.5406 21.2321 23.8587 21.5468 23.8587 21.9348V22.7778H15.9053V21.9348C15.9053 21.5468 16.2233 21.2321 16.6157 21.2321H16.7578V20.3892C16.7578 20.0519 16.9984 19.7702 17.3187 19.7024L17.3037 12.8021C17.0526 10.0451 14.7107 7.88443 11.8583 7.88443C9.00593 7.88443 6.66403 10.0451 6.41293 12.8021L6.3979 19.6963C6.7768 19.7521 7.24293 20.0412 7.24293 20.3892V21.2321H7.38502C7.77671 21.2321 8.09473 21.5468 8.09473 21.9348V22.7778H0.142092V21.9348C0.142092 21.5468 0.460107 21.2321 0.8518 21.2321H0.993892V20.3892C0.993892 20.0012 1.31191 19.6873 1.70436 19.6873V7.18179H0.923221L0 4.09052H4.11841V1Z" fill="currentColor"/></svg>
       </a>
     </div>
 
-    <p class="font-mono text-[0.6rem] text-white/50 tracking-[0.08em]">© 2026 ICAMP — ALL RIGHTS RESERVED</p>
+    <p class="font-mono text-[0.6rem] text-white/50 tracking-[0.08em]">© <span id="year"></span> ICAMP ALL RIGHTS RESERVED</p>
 
   </div>
 
@@ -389,6 +400,8 @@
         tick();
       });
     })();
+
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
